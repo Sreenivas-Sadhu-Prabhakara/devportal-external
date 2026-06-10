@@ -1,0 +1,54 @@
+<svg width="512" height="512" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Developer portal mark">
+  <defs>
+    <!-- Dark tile with a faint warm depth -->
+    <linearGradient id="tile" x1="0" y1="0" x2="64" y2="64" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#1A1A22"/>
+      <stop offset="0.55" stop-color="#0E0E13"/>
+      <stop offset="1" stop-color="#08080B"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="0.5" cy="0.45" r="0.6">
+      <stop offset="0" stop-color="#E50914" stop-opacity="0.40"/>
+      <stop offset="0.6" stop-color="#E50914" stop-opacity="0.08"/>
+      <stop offset="1" stop-color="#E50914" stop-opacity="0"/>
+    </radialGradient>
+    <!-- Bright brand red for the spokes -->
+    <linearGradient id="spoke" x1="20" y1="20" x2="44" y2="44" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#FF3640"/>
+      <stop offset="1" stop-color="#D40711"/>
+    </linearGradient>
+    <radialGradient id="hubFill" cx="0.40" cy="0.34" r="0.85">
+      <stop offset="0" stop-color="#FF6168"/>
+      <stop offset="0.45" stop-color="#F11420"/>
+      <stop offset="1" stop-color="#C20712"/>
+    </radialGradient>
+  </defs>
+
+  <!-- Rounded tile -->
+  <rect x="0" y="0" width="64" height="64" rx="15" fill="url(#tile)"/>
+  <rect x="0" y="0" width="64" height="64" rx="15" fill="url(#glow)"/>
+  <rect x="0.8" y="0.8" width="62.4" height="62.4" rx="14.2" fill="none" stroke="#FF2E38" stroke-opacity="0.30" stroke-width="0.9"/>
+
+  <!-- Spokes (hub -> endpoints). Drawn under the nodes. -->
+  <g stroke="url(#spoke)" stroke-width="3.0" stroke-linecap="round">
+    <line x1="32" y1="32" x2="32"   y2="13.6"/>
+    <line x1="32" y1="32" x2="47.9" y2="22.8"/>
+    <line x1="32" y1="32" x2="47.9" y2="41.2"/>
+    <line x1="32" y1="32" x2="32"   y2="50.4"/>
+    <line x1="32" y1="32" x2="16.1" y2="41.2"/>
+    <line x1="32" y1="32" x2="16.1" y2="22.8"/>
+  </g>
+
+  <!-- Endpoint nodes (connected APIs): clean white discs with a red ring -->
+  <g>
+    <circle cx="32"   cy="13.6" r="4.5" fill="#FFFFFF" stroke="#E50914" stroke-width="1.7"/>
+    <circle cx="47.9" cy="22.8" r="4.5" fill="#FFFFFF" stroke="#E50914" stroke-width="1.7"/>
+    <circle cx="47.9" cy="41.2" r="4.5" fill="#FFFFFF" stroke="#E50914" stroke-width="1.7"/>
+    <circle cx="32"   cy="50.4" r="4.5" fill="#FFFFFF" stroke="#E50914" stroke-width="1.7"/>
+    <circle cx="16.1" cy="41.2" r="4.5" fill="#FFFFFF" stroke="#E50914" stroke-width="1.7"/>
+    <circle cx="16.1" cy="22.8" r="4.5" fill="#FFFFFF" stroke="#E50914" stroke-width="1.7"/>
+  </g>
+
+  <!-- Central hub -->
+  <circle cx="32" cy="32" r="10.3" fill="url(#hubFill)" stroke="#08080B" stroke-width="1.0"/>
+  <circle cx="32" cy="32" r="3.5" fill="#FFFFFF"/>
+</svg>

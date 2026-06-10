@@ -6,6 +6,11 @@ Phase-1 **clickable mock**: real UI on in-memory fixtures, no live backend yet.
 
 Cinematic dark theme · **Bloc/Cubit + clean architecture** · `go_router`.
 
+> **📖 System docs:** architecture, roadmap, integration path, deployment, and a
+> how-to live in the shared package at
+> [`../devportal-flutter-shared/docs`](../devportal-flutter-shared/docs)
+> (`docs/index.html`).
+
 ## Run it
 
 ```bash
